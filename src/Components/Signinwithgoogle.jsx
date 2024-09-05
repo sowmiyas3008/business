@@ -106,7 +106,7 @@ const Signinwithgoogle = () => {
 
       console.log('User data stored in Firestore!');
       // Optional: Redirect to home page or another page after sign-in
-      navigate("/Home"); 
+ 
 
     } catch (error) {
       console.error('Error during Google Sign-In:', error.message);

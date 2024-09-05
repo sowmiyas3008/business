@@ -50,6 +50,7 @@ const LoginBox = ({ onClose }) => {
     try {
       // Authenticate the user with email and password
       await signInWithEmailAndPassword(auth, email, password);
+      onClose();
       navigate("/Home");
 
       // Redirect to the home page after successful login

@@ -1,0 +1,40 @@
+/* src/Component/Quest1/Ques1.css */
+.Ques1-container {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(rgba(2, 0, 14, 0.7), rgba(8, 0, 58, 0.7)),
+      url('C:\Users\balas\Documents\busi_project\business\src\assets\hero.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .left-side {
+    flex: 1;
+    /* Optionally add styles for the left side */
+  }
+  
+  .right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Space around the buttons */
+  }
+  
+  .button {
+    background-color:slateblue ; /* Button background color */
+    border: none;
+    color:darkgrey; /* Button text color */
+    padding: 10px 20px;
+    margin: 15px 0; /* Space between buttons */
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 400px;
+  }
+  
+  .button:hover {
+    background-color:indigo; /* Darker shade on hover */
+  }
