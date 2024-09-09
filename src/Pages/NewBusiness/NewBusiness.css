@@ -1,0 +1,74 @@
+.newBusiness-container {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(rgba(2, 0, 14, 0.7), rgba(8, 0, 58, 0.7)),
+    url('C:/Users/balas/Documents/busi_project/business/src/assets/hero.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.left-side1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center; /* Aligns content to the left */
+  padding: 20px;
+  color: rgba(255,255,255, 0.7);
+  height: 400px;
+}
+
+.right-side1 {
+  flex: 1;
+}
+
+.left-side1 h3{
+  padding-top: 80px;
+  padding-left: 20px;
+  text-align:center;
+  margin-top: 100px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.containernb ul li {
+  display: inline-block;
+  list-style: none;
+  margin:5px 10px;
+  font-size: 16px;
+  height: 1cm;
+
+}
+
+.btn-loc-bus {
+  display: flex;
+  flex-direction: column; /* Aligns buttons one below the other */
+  gap: 20px; /* Adds space between buttons */
+  width: 200px; /* You can adjust the width to your preference */
+  margin-top:80px;
+  margin-right: 100px;
+  
+}
+
+.btn-loc,
+.btn-bus {
+  padding: 10px 20px;
+  background-color: #8c8cbc;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  justify-content:center;
+  height: 2cm;
+  width: 7cm;
+  font-size: medium;
+  border-radius: 10px;
+  
+}
+
+.btn-loc:hover,
+.btn-bus:hover {
+  background-color: #d8bfd8; /* Darken on hover */
+}

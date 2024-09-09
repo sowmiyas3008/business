@@ -1,0 +1,11 @@
+
+
+  .ques1bg {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(rgba(2, 0, 14, 0.7), rgba(8, 0, 58, 0.7)),
+      url("C:\Users\balas\Documents\busi_project\business\src\assets\hero.png"); /* Use relative path */
+    background-size: cover;
+    background-position: center;
+  }
+  
