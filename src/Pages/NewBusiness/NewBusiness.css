@@ -1,74 +1,211 @@
-.newBusiness-container {
-  display: flex;
-  height: 100vh;
-  background: linear-gradient(rgba(2, 0, 14, 0.7), rgba(8, 0, 58, 0.7)),
-    url('C:/Users/balas/Documents/busi_project/business/src/assets/hero.png');
-  background-size: cover;
-  background-position: center;
+.testimonial-section {
+  text-align: center;
+  padding: 3cm;
+  background-color: #2d2d2d;
+  background-image: url('C:/Users/balas/Documents/busi_project/business/src/assets/back3-2.png');
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+  background-size: contain; /* Ensures the background image covers the entire section */
+  background-position: right; /* Centers the background image */
+  color: white;
+  height: 16cm;
 }
 
-.left-side1 {
-  flex: 1;
+.testimonial-section h2 {
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: rgb(246, 244, 230);
+  color: #333;
+  border-radius: 10px;
+  padding: 30px;
+  width: 250px;
+  height: 10cm;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding-top: 60px; /* To make space for the image */
+  transition: transform 0.3s ease; /* Smooth transition for the scale effect */
+}
+
+/* Hover effect */
+.card:hover {
+  transform: scale(1.05); /* Increase the size by 5% on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+}
+
+.profile-image {
+  width: 130px;
+  height: 130px;
+  border-radius: 70%;
+  object-fit: cover;
+  position: absolute;
+  top: -40px; /* Moves the image halfway out of the card */
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid white; /* Optional: Adds a border around the image */
+}
+
+.card h3 {
+  margin-top: 60px; /* Add space below the image */
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.comment {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .testimonial-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .profile-image {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+
+
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-box {
+  display: flex;
+  background: rgb(246, 244, 230);
+  width: 800px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  height:15cm;
+  /* background-image: url('C:\Users\balas\Documents\busi_project\business\src\assets\popup-back.png'); */
+  background-position: right;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+.popup-content {
+  display: flex;
+
+
+  width: 100%;
+}
+
+.popup-left {
+  background-color: #262626;
+  color: #fff;
+  width: 40%;
+  padding: 30px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items:center; /* Aligns content to the left */
-  padding: 20px;
-  color: rgba(255,255,255, 0.7);
-  height: 400px;
 }
 
-.right-side1 {
-  flex: 1;
+.popup-left img {
+  width: 420px;
+  height:430px;
+  margin-bottom: 20px;
 }
 
-.left-side1 h3{
-  padding-top: 80px;
-  padding-left: 20px;
-  text-align:center;
-  margin-top: 100px;
+.popup-left h3 {
+  margin-top: 10px;
 }
 
-.logo {
-  width: 150px;
+.popup-right {
+  padding: 40px;
+  width: 60%;
+  height: 30cm;
 }
 
-.containernb ul li {
-  display: inline-block;
-  list-style: none;
-  margin:5px 10px;
-  font-size: 16px;
-  height: 1cm;
-
+.popup-right h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.btn-loc-bus {
+.popup-form {
+  display: cover;
+  flex-direction: column;
+}
+
+.popup-form h2{
+  color:black;
+  font-weight:300;
+}
+
+.popup-form button{
+  background-color:gray;
+}
+
+.popup-checkbox {
   display: flex;
-  flex-direction: column; /* Aligns buttons one below the other */
-  gap: 20px; /* Adds space between buttons */
-  width: 200px; /* You can adjust the width to your preference */
-  margin-top:80px;
-  margin-right: 100px;
-  
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.btn-loc,
-.btn-bus {
-  padding: 10px 20px;
-  background-color: #8c8cbc;
-  color: rgb(0, 0, 0);
+.popup-checkbox input {
+  margin-right: 10px;
+}
+
+.popup-input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.popup-button {
+  padding: 12px;
+  background-color: #666879;
+  color: #fff;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
-  text-align: center;
-  justify-content:center;
-  height: 2cm;
-  width: 7cm;
-  font-size: medium;
-  border-radius: 10px;
-  
 }
 
-.btn-loc:hover,
-.btn-bus:hover {
-  background-color: #d8bfd8; /* Darken on hover */
+.popup-button:hover {
+  background-color: #a1a2a9;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
 }

@@ -1,21 +1,19 @@
-// Location.jsx
-import React from 'react';
-import './Location.css'// Adjust the path if necessary
-import { Navigate } from 'react-router-dom';
-
+import React from "react";
+import './Location.css';
 
 const Location = () => {
   return (
-    <div className="ques1bg">
-      <nav className='loccontainer'>
-        {/* <img src={} alt="" className='logo'/> */}
-        <ul>
-          <li>Overview</li>
-          <li><button className='btn' onClick={() => Navigate('/Home')}>Profile</button></li>
-        </ul>
-      </nav>
+    <div className="layout-container">
+      <div className="left-section">
+        <div className="nested-boxes">
+          <div className="box box1"></div>
+          <div className="box box2"></div>
+          <div className="box box3"></div>
+        </div>
+      </div>
+      <div className="right-section"></div>
     </div>
-  )
-}
+  );
+};
 
 export default Location;

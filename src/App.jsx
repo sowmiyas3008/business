@@ -7,6 +7,7 @@ import Signup from './Pages/Signup/Signup'; // Adjust the path if needed
 import Home from './Components/Home/Home';  // Adjust the path if needed
 import NewBusiness from './Pages/NewBusiness/NewBusiness';
 
+
 const App = () => {
   const [isHeroContentVisible, setHeroContentVisible] = useState(true);
   const [showLoginBox, setShowLoginBox] = useState(false);
@@ -45,10 +46,10 @@ const AppWithNavbar = ({ handleLoginClick, handleCloseLoginBox, isHeroContentVis
         <Route path="/signup" element={<Signup />} />
         <Route path="/home" element={<Home />} />
         <Route path="/NewBusiness" element={<NewBusiness />} />
+        {/* <Route path="/Location" element={<Location />} /> */}
         <Route path="/login" element={
           showLoginBox ? <LoginBox onClose={handleCloseLoginBox} /> : <Hero isVisible={isHeroContentVisible} />
         } />
-        
       </Routes>
       {showLoginBox && <LoginBox onClose={handleCloseLoginBox} />}
     </div>
